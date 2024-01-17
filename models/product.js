@@ -16,8 +16,8 @@ const ProductSchema = Schema({
         required: true
     }, 
     price: {
-        type: Number,
-        default: 0
+        type: Boolean,
+        default: 0.0
     },
     category: {
         type: Schema.Types.ObjectId,
@@ -25,6 +25,9 @@ const ProductSchema = Schema({
         required: true
     },
     description: {
+        type: String
+    },
+    brand: {
         type: String
     },
     available: {

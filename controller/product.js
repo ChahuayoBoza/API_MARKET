@@ -27,7 +27,7 @@ const addProduct = async (req, res=response) => {
 
 const getProducts = async (req, res = response) => {
 
-    const {limit = 5, from = 0} = req.query;
+    const {limit = 6, from = 0} = req.query;
     const query = { status : true }
 
     const [total, products] = await Promise.all([
